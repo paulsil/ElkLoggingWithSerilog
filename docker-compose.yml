@@ -1,0 +1,47 @@
+version: '3.4'
+
+services:
+  elkloggingwithserilog:
+    image: ${DOCKER_REGISTRY-}elkloggingwithserilog
+    build:
+      context: .
+      dockerfile: ElkLoggingWithSerilog/Dockerfile
+    networks:
+      - elastic
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.12.0
+    mem_limit: 2048m
+    container_name: elasticsearch
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    networks:
+      - elastic
+
+  kib01:
+    image: docker.elastic.co/kibana/kibana:7.12.0
+    container_name: kib01
+    ports:
+      - 5601:5601
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    networks:
+      - elastic
+
+volumes:
+  elasticsearch-data:
+    driver: local
+
+networks:
+  elastic:
+    driver: bridge
