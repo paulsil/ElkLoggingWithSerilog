@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElkLoggingWithSerilog", "El
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{006BE32D-5805-4E67-A238-63E3B63EA1B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElkLoggingWithSerilog.Test", "ElkLoggingWithSerilog.Test\ElkLoggingWithSerilog.Test.csproj", "{FE114D75-E650-47CD-808C-129F73C5500F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{006BE32D-5805-4E67-A238-63E3B63EA1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{006BE32D-5805-4E67-A238-63E3B63EA1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{006BE32D-5805-4E67-A238-63E3B63EA1B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE114D75-E650-47CD-808C-129F73C5500F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE114D75-E650-47CD-808C-129F73C5500F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE114D75-E650-47CD-808C-129F73C5500F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE114D75-E650-47CD-808C-129F73C5500F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
