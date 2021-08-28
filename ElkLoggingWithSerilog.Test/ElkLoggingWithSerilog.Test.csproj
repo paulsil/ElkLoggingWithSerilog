@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ElkLoggingWithSerilog\ElkLoggingWithSerilog.csproj" />
+    <ProjectReference Include="..\Books.API\Books.API.csproj" />
   </ItemGroup>
 
 </Project>

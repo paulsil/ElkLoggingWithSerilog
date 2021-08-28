@@ -1,6 +1,15 @@
 version: '3.4'
 
 services:
+
+  booksapi:
+    image: ${DOCKER_REGISTRY-}booksapi
+    build:
+      context: .
+      dockerfile: Books.API/Dockerfile
+    networks:
+      - elastic
+
   elkloggingwithserilog:
     image: ${DOCKER_REGISTRY-}elkloggingwithserilog
     build:

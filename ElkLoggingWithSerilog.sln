@@ -7,7 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElkLoggingWithSerilog", "El
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{006BE32D-5805-4E67-A238-63E3B63EA1B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElkLoggingWithSerilog.Test", "ElkLoggingWithSerilog.Test\ElkLoggingWithSerilog.Test.csproj", "{FE114D75-E650-47CD-808C-129F73C5500F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElkLoggingWithSerilog.Test", "ElkLoggingWithSerilog.Test\ElkLoggingWithSerilog.Test.csproj", "{FE114D75-E650-47CD-808C-129F73C5500F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Books.API", "Books.API\Books.API.csproj", "{EBB2B9C7-E90A-46F3-88EF-E1F1A0EFDB95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books.Domain", "Books.Domain\Books.Domain.csproj", "{F6CB1669-5E5F-4BC4-95D3-ED06E7D91187}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books.Infrastructure.Data", "Book.Infrastructure.Data\Books.Infrastructure.Data.csproj", "{F1720785-0800-4820-ADF9-503115DDB23E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books.Infrastructure.Data.TestHarness", "Books.Infrastructure.Data.TestHarness\Books.Infrastructure.Data.TestHarness.csproj", "{6F4B1E72-6A7B-4E9F-AAF1-C09DCD80DA0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +35,22 @@ Global
 		{FE114D75-E650-47CD-808C-129F73C5500F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE114D75-E650-47CD-808C-129F73C5500F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE114D75-E650-47CD-808C-129F73C5500F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBB2B9C7-E90A-46F3-88EF-E1F1A0EFDB95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB2B9C7-E90A-46F3-88EF-E1F1A0EFDB95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB2B9C7-E90A-46F3-88EF-E1F1A0EFDB95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB2B9C7-E90A-46F3-88EF-E1F1A0EFDB95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6CB1669-5E5F-4BC4-95D3-ED06E7D91187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6CB1669-5E5F-4BC4-95D3-ED06E7D91187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6CB1669-5E5F-4BC4-95D3-ED06E7D91187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6CB1669-5E5F-4BC4-95D3-ED06E7D91187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1720785-0800-4820-ADF9-503115DDB23E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1720785-0800-4820-ADF9-503115DDB23E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1720785-0800-4820-ADF9-503115DDB23E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1720785-0800-4820-ADF9-503115DDB23E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F4B1E72-6A7B-4E9F-AAF1-C09DCD80DA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F4B1E72-6A7B-4E9F-AAF1-C09DCD80DA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F4B1E72-6A7B-4E9F-AAF1-C09DCD80DA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F4B1E72-6A7B-4E9F-AAF1-C09DCD80DA0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

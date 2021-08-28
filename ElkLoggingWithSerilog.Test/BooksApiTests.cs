@@ -2,16 +2,17 @@
 using Microsoft.AspNetCore.TestHost;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Books.API;
 using Xunit;
 
 namespace ElkLoggingWithSerilog.Test
 {
-    public class WeatherApiTests
+    public class BooksApiTests
     {
         private readonly TestServer _server;
         private readonly HttpClient _client;
 
-        public WeatherApiTests()
+        public BooksApiTests()
         {
             _server = new TestServer(new WebHostBuilder()
            .UseStartup<Startup>());
@@ -19,14 +20,14 @@ namespace ElkLoggingWithSerilog.Test
         }
 
         [Fact]
-        public async Task ReturnHelloWorld()
+        public async Task GetBob()
         {
             // Act
-            var response = await _client.GetAsync("/WeatherForecast");
+            var response = await _client.GetAsync("/Book");
             response.EnsureSuccessStatusCode();
             var responseString = await response.Content.ReadAsStringAsync();
             // Assert
-            Assert.Equal("Hello World!", responseString);
+            Assert.Equal("{\"name\":\"Bob\"}", responseString);
         }
     }
 }
